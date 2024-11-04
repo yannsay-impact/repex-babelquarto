@@ -1,0 +1,53 @@
+on:
+  workflow_dispatch:
+  push:
+    branches: main
+
+name: Quarto Publish
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Install R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.4.0'
+
+      - name: Install R Dependencies
+        uses: r-lib/actions/setup-renv@v2
+        with:
+          cache-version: 1
+
+      - name: Get gh-page adress
+        run: |
+          owner=$(echo ${{ github.repository }} | cut -d'/' -f1)
+          repo=$(echo ${{ github.repository }} | cut -d'/' -f2)
+          ghpagesite="https://$owner.github.io/$repo/"
+          echo "ghpagesite=$ghpagesite" >> $GITHUB_ENV
+
+      - name: Render Book with babelquarto
+        run: Rscript -e 'babelquarto::render_website(site_url = Sys.getenv("ghpagesite"))'
+
+      - name: Achive book render
+        uses: actions/upload-artifact@v4
+        with:
+          name: site_render
+          path: _site/
+
+      - name: Publish
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+          render: false
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
