@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "about.es.html",
+    "href": "about.es.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.es.html",
+    "href": "index.es.html",
+    "title": "repex-babelquarto",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "repex-babelquarto",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "practice.es.html",
+    "href": "practice.es.html",
+    "title": "Practice español",
+    "section": "",
+    "text": "Practice español"
+  },
+  {
+    "objectID": "practice.html",
+    "href": "practice.html",
+    "title": "Practice english",
+    "section": "",
+    "text": "Practice english"
+  },
+  {
+    "objectID": "practices.es.html",
+    "href": "practices.es.html",
+    "title": "Practices español",
+    "section": "",
+    "text": "Practices español"
+  },
+  {
+    "objectID": "practices.html",
+    "href": "practices.html",
+    "title": "Practices english",
+    "section": "",
+    "text": "Practices english"
+  }
+]
