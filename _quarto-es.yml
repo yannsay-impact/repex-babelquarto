@@ -1,0 +1,11 @@
+website:
+  title: "repex-babelquarto"
+  sidebar:
+    search: true
+    contents:
+      - text: Inicio
+        href: index.qmd
+      - section: "Sesion 1"
+        contents:
+          - practices.qmd
+

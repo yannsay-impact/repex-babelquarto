@@ -1,23 +1,16 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "repex-babelquarto",
+    "title": "repex-babelquarto en español",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Es un sito Quarto."
   },
   {
-    "objectID": "practice.html",
-    "href": "practice.html",
-    "title": "Practice español",
+    "objectID": "practices.html",
+    "href": "practices.html",
+    "title": "Practices español",
     "section": "",
-    "text": "Practice español"
+    "text": "Practices español"
   }
 ]

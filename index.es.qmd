@@ -1,7 +1,6 @@
 ---
-title: "repex-babelquarto"
+title: "repex-babelquarto en español"
 ---
 
-This is a Quarto website.
+Es un sito Quarto.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
